@@ -8,35 +8,18 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ChainableUIKit'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'swift lib， ChainableUIKit.'
 
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
-
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+  链式调用设置 UIKit 组件
                        DESC
-
-  s.homepage         = 'https://github.com/qiaozhiguang/ChainableUIKit'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  s.homepage         = 'https://github.com/zhiguangqiao/ChainableUIKit'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'qiaozhiguang' => 'qiaozhiguang@yuanfudao.com' }
-  s.source           = { :git => 'https://github.com/qiaozhiguang/ChainableUIKit.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-
+  s.author           = { 'qiaozhiguang' => '860638830@qq.com' }
+  s.source           = { :git => 'https://github.com/zhiguangqiao/ChainableUIKit.git', :tag => s.version.to_s }
   s.ios.deployment_target = '10.0'
-
   s.source_files = 'ChainableUIKit/Classes/**/*'
   s.dependency 'SnapKit'
-  # s.resource_bundles = {
-  #   'ChainableUIKit' => ['ChainableUIKit/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-   s.frameworks = 'UIKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.frameworks = 'UIKit'
 end
