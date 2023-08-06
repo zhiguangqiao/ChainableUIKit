@@ -7,11 +7,16 @@
 //
 
 import UIKit
-
+import ChainableUIKit
 class ViewController: UIViewController {
-
+    let label = UILabel().chain
+        .backgroundColor(.red)
+        .cornerRadius(10)
+        .fixSize(.init(width: 30, height: 20))
+        .view
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.addSubview(label)
         // Do any additional setup after loading the view, typically from a nib.
     }
 

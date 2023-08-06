@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-extension Chainable where Base: UIButton {
+public extension Chainable where Base: UIButton {
     @discardableResult
     func image(_ image: UIImage?, state: UIControl.State) -> Self {
         view.setImage(image, for: state)

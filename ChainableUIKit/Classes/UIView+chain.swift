@@ -8,7 +8,7 @@
 import UIKit
 import SnapKit
 
-extension Chainable where Base: UIView {
+public extension Chainable where Base: UIView {
     @discardableResult
     func backgroundColor(_ color: UIColor) -> Self {
         view.backgroundColor = color

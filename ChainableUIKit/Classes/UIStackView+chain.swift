@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-extension Chainable where Base: UIStackView {
+public extension Chainable where Base: UIStackView {
     @discardableResult
     func axis(_ axis: NSLayoutConstraint.Axis) -> Self {
         view.axis = axis

@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-extension Chainable where Base: UITableView {
+public extension Chainable where Base: UITableView {
     @discardableResult
     func separatorStyle(_ separatorStyle: UITableViewCell.SeparatorStyle) -> Self {
         view.separatorStyle = separatorStyle

@@ -19,13 +19,11 @@ public protocol ChainableCompatible {
     var chain: Chainable<ChainableBase> { get set }
 }
 
-extension ChainableCompatible {
-    public var chain: Chainable<Self> {
+public extension ChainableCompatible {
+    var chain: Chainable<Self> {
         get { Chainable(self) }
         set { }
     }
 }
-
-import Foundation
 
 extension UIView: ChainableCompatible { }

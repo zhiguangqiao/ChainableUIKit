@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-extension Chainable where Base: UITextField {
+public extension Chainable where Base: UITextField {
     @discardableResult
     func text(_ text: String) -> Self {
         view.text = text
