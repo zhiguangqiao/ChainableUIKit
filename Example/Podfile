@@ -7,7 +7,7 @@ target 'ChainableUIKit_Example' do
 
   target 'ChainableUIKit_Tests' do
     inherit! :search_paths
-
+    
     
   end
 end
