@@ -49,7 +49,7 @@ pod 'ChainableUIKit'
 
 ## Author
 
-qiaozhiguang, qiaozhiguang@yuanfudao.com
+qiaozhiguang, 860638830@qq.com
 
 ## License
 
