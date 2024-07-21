@@ -51,6 +51,12 @@ public extension Chainable where Base: UIView {
         return view.chain
     }
     @discardableResult
+    func addTo(superView: UIView, closure: (_ make: ConstraintMaker) -> Void) -> Self {
+        superView.addSubview(self.view)
+        self.view.snp.makeConstraints(closure)
+        return view.chain
+    }
+    @discardableResult
     func isUserInteractionEnabled(_ isUserInteractionEnabled: Bool) -> Self {
         view.isUserInteractionEnabled = isUserInteractionEnabled
         return self
