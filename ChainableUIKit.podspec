@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ChainableUIKit'
-  s.version          = '0.1.3'
+  s.version          = '1.0.0'
   s.summary          = 'swift lib， ChainableUIKit.'
 
   s.description      = <<-DESC
