@@ -51,9 +51,28 @@ public extension Chainable where Base: UIView {
         return view.chain
     }
     @discardableResult
+    func addToSuperView(_ closure: (_ make: ConstraintMaker, _ view: UIView) -> Void) -> Chainable<UIView> {
+        let view = UIView()
+        view.addSubview(self.view)
+        let block = { (make: ConstraintMaker) in
+            closure(make, self.view)
+        }
+        self.view.snp.makeConstraints(block)
+        return view.chain
+    }
+    @discardableResult
     func addTo(superView: UIView, closure: (_ make: ConstraintMaker) -> Void) -> Self {
         superView.addSubview(self.view)
         self.view.snp.makeConstraints(closure)
+        return view.chain
+    }
+    @discardableResult
+    func addTo(superView: UIView, closure: (_ make: ConstraintMaker, _ view: UIView) -> Void) -> Self {
+        superView.addSubview(self.view)
+        let block = { (make: ConstraintMaker) in
+            closure(make, self.view)
+        }
+        self.view.snp.makeConstraints(block)
         return view.chain
     }
     @discardableResult
