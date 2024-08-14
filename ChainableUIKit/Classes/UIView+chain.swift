@@ -42,12 +42,24 @@ public extension Chainable where Base: UIView {
         return self
     }
     @discardableResult
+    func fixAspectRatio(_ ratio: CGFloat) -> Self {
+        view.snp.makeConstraints { make in
+            make.height.equalTo(view.snp.width).multipliedBy(ratio)
+        }
+        return self
+    }
+    @discardableResult
     func addToSuperView(_ inset: UIEdgeInsets) -> Chainable<UIView> {
         let view = UIView()
         view.addSubview(self.view)
         self.view.snp.makeConstraints { make in
             make.edges.equalTo(inset)
         }
+        return view.chain
+    }
+    @discardableResult
+    func invoke(_ block : (UIView) -> Void) -> Self {
+        block(view)
         return view.chain
     }
     @discardableResult
