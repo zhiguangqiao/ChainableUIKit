@@ -1,5 +1,5 @@
 PODS:
-  - ChainableUIKit (0.1.3):
+  - ChainableUIKit (1.0.2):
     - SnapKit
   - SnapKit (5.6.0)
 
@@ -15,7 +15,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  ChainableUIKit: 5691ea0345015b2f6a3187eb3d04e5c9cf2bb12a
+  ChainableUIKit: 01337452c320403864ab2e6b35187d145f56d6b5
   SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
 
 PODFILE CHECKSUM: efb12deebf50d50229d880f9cee10faac5c37cb8

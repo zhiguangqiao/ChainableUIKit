@@ -35,6 +35,18 @@ public extension Chainable where Base: UIView {
         return self
     }
     @discardableResult
+    func fix(width: CGFloat? = nil, height: CGFloat? = nil) -> Self {
+        view.snp.makeConstraints { make in
+            if let width {
+                make.width.equalTo(width)
+            }
+            if let height {
+                make.height.equalTo(height)
+            }
+        }
+        return self
+    }
+    @discardableResult
     func fixSize(_ size: CGSize) -> Self {
         view.snp.makeConstraints { make in
             make.size.equalTo(size)
@@ -46,6 +58,16 @@ public extension Chainable where Base: UIView {
         view.snp.makeConstraints { make in
             make.height.equalTo(view.snp.width).multipliedBy(ratio)
         }
+        return self
+    }
+    @discardableResult
+    func hugging(_ priority: UILayoutPriority, for axis: NSLayoutConstraint.Axis) -> Self {
+        view.setContentHuggingPriority(priority, for: axis)
+        return self
+    }
+    @discardableResult
+    func compressionResistance(_ priority: UILayoutPriority, for axis: NSLayoutConstraint.Axis) -> Self {
+        view.setContentCompressionResistancePriority(priority, for: axis)
         return self
     }
     @discardableResult

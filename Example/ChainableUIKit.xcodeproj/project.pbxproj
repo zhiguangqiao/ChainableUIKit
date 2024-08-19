@@ -31,7 +31,6 @@
 		0BF1089771834313B3EACCA1 /* Pods_ChainableUIKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChainableUIKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		19CCBCDD9D50DA0647784C2E /* Pods-ChainableUIKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChainableUIKit_Tests.release.xcconfig"; path = "Target Support Files/Pods-ChainableUIKit_Tests/Pods-ChainableUIKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		1A5F7D27AE86FE1103513187 /* Pods_ChainableUIKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChainableUIKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		41316EF1CB649154B8D70A53 /* ChainableUIKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ChainableUIKit.podspec; path = ../ChainableUIKit.podspec; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* ChainableUIKit_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChainableUIKit_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -143,7 +142,6 @@
 		607FACF51AFB993E008FA782 /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
-				41316EF1CB649154B8D70A53 /* ChainableUIKit.podspec */,
 				9E65F3D982D5779B238F2230 /* README.md */,
 				852AB3746A3462971AB51EAD /* LICENSE */,
 			);
