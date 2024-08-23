@@ -80,7 +80,7 @@ public extension Chainable where Base: UIView {
         return view.chain
     }
     @discardableResult
-    func invoke(_ block : (UIView) -> Void) -> Self {
+    func invoke(_ block : (Base) -> Void) -> Self {
         block(view)
         return view.chain
     }
